@@ -1,6 +1,10 @@
 * {
     margin: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
 }
 
 .homeContainer {
