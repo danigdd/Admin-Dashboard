@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.homeContainer {
+    display: flex;
+    min-height: 100vh;
+    background-color: green;
+}
+
+.mainPageContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    flex: 1;
+}
