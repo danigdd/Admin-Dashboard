@@ -1,0 +1,32 @@
+.miscContainer {
+    flex: 1;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcementsContainer {
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcementsGridWrapper {
+    height: 400px;
+    background-color: cornflowerblue;
+    padding: 40px 24px;
+}
+
+.announcementsGrid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    background-color: darkcyan;
+}
+
+.announcementsGrid > .element {
+    background-color: black;
+}
