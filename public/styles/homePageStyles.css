@@ -1,0 +1,5 @@
+.homeElementsContainer {
+    flex: 1;
+    background-color: blueviolet;
+    min-height: 500px;
+}
