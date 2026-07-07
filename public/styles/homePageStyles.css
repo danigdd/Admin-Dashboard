@@ -10,6 +10,7 @@
     background-color: purple;
     display: flex;
     flex-direction: column;
+    gap: 10px
 }
 
 .projectsContainer > h2 {
@@ -26,5 +27,28 @@
 
 .projectsGrid > .element {
     background-color: aliceblue;
+    border-radius: 12px;
+    border-left: solid 10px yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 48px 24px;
 }
 
+.element > .options {
+    align-self: flex-end;
+    flex: 1;
+    background-color: darkcyan;
+}
+
+.element > .description {
+    flex: 4;
+    background-color: brown;
+    overflow: hidden;
+}
+
+.titleProject {
+    font-weight: 900;
+    font-size: 24px;
+    background-color: green;
+}
