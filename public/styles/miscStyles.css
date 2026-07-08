@@ -28,9 +28,14 @@
 }
 
 .announcementsGrid > .element {
-    background-color: black;
+    background-color: slateblue;
+    border-bottom: 1px solid slategray;
 }
 
+.announcementsGrid > .element > span {
+    font-size: 18px;
+    font-weight: 900;
+}
 .trendingContainer {
     background-color: darkseagreen;
     flex: 1;
