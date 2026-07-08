@@ -39,6 +39,8 @@
     align-self: flex-end;
     flex: 1;
     background-color: darkcyan;
+    display: flex;
+    gap: 20px;
 }
 
 .element > .description {
@@ -51,4 +53,10 @@
     font-weight: 900;
     font-size: 24px;
     background-color: green;
+}
+
+.options > img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
 }
