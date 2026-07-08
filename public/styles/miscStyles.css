@@ -61,4 +61,23 @@
 
 .trendingGrid > .element {
     background-color: darkblue;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.pfp {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    object-fit: cover;
+    background-color: lime;
+}
+
+.userInfo > span {
+
+}
+
+.userInfo > p {
+    
 }
