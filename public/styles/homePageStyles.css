@@ -1,58 +1,63 @@
 .mainLayoutContainer {
     flex: 1;
-    background-color: pink;
+    background-color: var(--bg-main);
     display: flex;
     padding: 48px 32px;
 }
 
 .projectsContainer {
     flex: 3;
-    background-color: purple;
     display: flex;
     flex-direction: column;
     gap: 10px
 }
 
 .projectsContainer > h2 {
-    background-color: burlywood;
+
 }
 
 .projectsGrid {
     display: grid;
-    background-color: greenyellow;
     grid-template-rows: repeat(3, 250px);
     grid-template-columns: repeat(2, 400px);
     gap: 30px;
 }
 
 .projectsGrid > .element {
-    background-color: aliceblue;
+    background-color: var(--bg-card);
     border-radius: 12px;
-    border-left: solid 10px yellow;
+    border-left: solid 10px var(--primary);
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 48px 24px;
+    transition: 0.2s;
+}
+
+.projectsGrid > .element:hover {
+    transform: scale(1.02);
+    background-color: var(--bg-card-hover);
+    cursor: pointer;
 }
 
 .element > .options {
     align-self: flex-end;
     flex: 1;
-    background-color: darkcyan;
     display: flex;
     gap: 20px;
 }
 
 .element > .description {
     flex: 4;
-    background-color: brown;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .titleProject {
     font-weight: 900;
     font-size: 24px;
-    background-color: green;
 }
 
 .options > img {

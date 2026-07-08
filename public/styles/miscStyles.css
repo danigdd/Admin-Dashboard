@@ -1,12 +1,11 @@
 .miscContainer {
     flex: 1;
-    background-color: bisque;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .announcementsContainer {
-    background-color: crimson;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -14,7 +13,8 @@
 
 .announcementsGridWrapper {
     height: 400px;
-    background-color: cornflowerblue;
+    background-color: var(--bg-card);
+    border-radius: 24px;
     padding: 40px 24px;
 }
 
@@ -24,20 +24,30 @@
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
-    background-color: darkcyan;
 }
 
 .announcementsGrid > .element {
-    background-color: slateblue;
     border-bottom: 1px solid slategray;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: 0.2s;
+}
+
+.announcementsGrid > .element:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .announcementsGrid > .element > span {
     font-size: 18px;
     font-weight: 900;
 }
+
+.announcementsGrid > .element > p {
+    font-size: 14px;
+} 
 .trendingContainer {
-    background-color: darkseagreen;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -47,12 +57,12 @@
 .trendingGridWrapper {
     height: 100%;
     padding: 24px 24px;
-    background-color: dimgrey;
+    background-color: var(--bg-card);
+    border-radius: 24px;
 }
 
 .trendingGrid {
     height: 100%;
-    background-color: blueviolet;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -60,10 +70,14 @@
 }
 
 .trendingGrid > .element {
-    background-color: darkblue;
     display: flex;
     gap: 20px;
     align-items: center;
+    transition: 0.2s;
+}
+.trendingGrid > .element:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .pfp {
@@ -71,7 +85,6 @@
     width: 60px;
     border-radius: 30px;
     object-fit: cover;
-    background-color: lime;
 }
 
 .userInfo > span {

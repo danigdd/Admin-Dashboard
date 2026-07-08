@@ -1,21 +1,20 @@
 .userProfileContainer {
     height: 100px;
-    background-color: green;
     padding: 10px 48px;
     display: flex;
+    background-color: var(--bg-card);
 }
 
 .userInfoContainer {
     flex: 2;
     height: 100%;
     display: flex;
-    background-color: pink;
+
 }
 
 .userWelcome {
     display: flex;
     flex-direction: column;
-    background-color: lime;
     padding: 10px 10px;
     gap: 10px;
 }
@@ -38,7 +37,6 @@
 
 .userActionsContainer {
     flex: 1;
-    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -48,4 +46,15 @@
     padding: 12px 40px;
     border-radius: 20px;
     border: none;
+    background-color: var(--primary-dark);
+    color: var(--text-main);
+    font-size: 15px;
+    font-weight: 900;
+    transition: 0.2s;
+}
+
+.userActionsContainer > button:hover {
+    background-color: var(--primary);
+    cursor: pointer;
+    transform: scale(1.05);
 }

@@ -1,47 +1,49 @@
 .sidebarContainer {
     width: 300px;
-    background-color: blue;
+    background-color: var(--bg-sidebar);
     display: flex;
     flex-direction: column;
-    padding: 30px 16px;
+    padding: 30px 30px;
     gap: 50px;
 }
 
 .main_section {
     display: flex;
-    gap: 30px;
+    gap: 5px;
     width: 100%;
     align-items: center;
 }
 .sidebarContainer > .section {
-    background-color: beige;
+    background-color: var(--bg-elem-sidebar);
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 }
 
+.sidebarContainer > .section > .element:hover {
+    background-color: var(--bg-card-hover);
+}
+
 .main_section > .main_img {
     width: 80px;
     height: 100%;
-    background-color: brown
 }
 
 .main_section > .main_title {
     font-weight: 900;
     font-size: 30px;
-    background-color: green
 }
 
 
 .sectionlogo {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     object-fit: cover;
 }
 
 .section_text {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 900;
 }
 
@@ -49,5 +51,8 @@
     display: flex;
     gap: 30px;
     align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
