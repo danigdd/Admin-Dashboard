@@ -1,4 +1,53 @@
 .sidebarContainer {
     width: 300px;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 16px;
+    gap: 50px;
 }
+
+.main_section {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+.sidebarContainer > .section {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.main_section > .main_img {
+    width: 80px;
+    height: 100%;
+    background-color: brown
+}
+
+.main_section > .main_title {
+    font-weight: 900;
+    font-size: 30px;
+    background-color: green
+}
+
+
+.sectionlogo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.section_text {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.section > .element {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
